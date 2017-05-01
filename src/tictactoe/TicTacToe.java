@@ -69,10 +69,12 @@ public class TicTacToe extends Observable{
     
     private void outputSpielfeld(){
          for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++)
-                System.out.println(spielfeld[i][j]);
-                
-        }
+             for(int j=0;j<3;j++){
+                System.out.print(spielfeld[i][j]+"|");
+             }
+            System.out.println("");
+         }
+          System.out.println("");
     }
     
     public boolean istSpielZuEnde(){
